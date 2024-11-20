@@ -11,6 +11,5 @@ if [ "$CURRENT_SHA" == "$DEPLOYED_SHA" ]; then
   exit 0
 else
   echo "New SHA detected. New build needed."
-  && npm run build \
   exit 1
 fi
